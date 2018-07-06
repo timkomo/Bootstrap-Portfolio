@@ -1,0 +1,93 @@
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+
+   .container {  
+    /* This section calls the slideInFromLeft animation we defined above */
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    
+    
+    padding: 30px;
+  }
+
+
+  
+
+  .nav-link {
+  transition: transform .2s; /* Animation */
+  margin:5px;
+}
+  
+
+
+.nav-link:hover {
+transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+
+.btn {
+  transition: transform .2s; /* Animation */
+}
+  
+
+
+.btn:hover {
+transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+body {
+background-image: url(../images/symphony.png);
+background-repeat: repeat-xy;
+
+}
+
+@media only screen and (max-width: 991px) {
+.btn:hover {
+transition: transform .2s;
+transform: scale(0.0);
+
+}
+
+.nav-link:hover {
+
+transform: scale(-1);
+
+}
+}
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+ 
+ 
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+
+  .navbar-home {
+    animation: 1s ease-out 0s 1 slideInFromRight;
+  }
+  
+
+.nav-link:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
